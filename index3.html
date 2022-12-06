@@ -1017,7 +1017,7 @@
       {
         scale: 1,
         rotate: 0,
-        ease: "bounce",
+        ease: "elastic",
         opacity: 1,
         trigger: ".section1 .sec1__img img",
         duration: 1,
@@ -1029,7 +1029,7 @@
       {
         opacity: 1,
         rotate: 0,
-        ease: "elastic",
+        ease: "elastic(3)",
         scale: 1,
         trigger: ".section1 .sec1__img__decoration",
         duration: 1,
@@ -1103,18 +1103,11 @@
       });
     }
     // 마우스 커서 바꾸기
-    const Sec1Sec2 = document.querySelector(".section1 .sec2");
-    Sec1Sec2.addEventListener("mousemove", (e) => {
-      let mousePageX = e.clientX;
-      let mousePageY = e.clientY;
-      let cursor = document.querySelector(".section1 .sec2 .finger");
-      console.log(mousePageX);
-      console.log(mousePageY);
-
-      gsap.to(cursor, {
+    document.querySelector(".section1 .sec2").addEventListener("mousemove", (e) => {
+      gsap.to(".section1 .sec2 .finger", {
         duration: 0.3,
-        left: mousePageX / 1,
-        top: mousePageY / 1,
+        left: e.screenX / 1,
+        top: e.screenY / 1,
       });
     });
   </script>
