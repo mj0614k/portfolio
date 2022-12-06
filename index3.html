@@ -994,23 +994,50 @@
       trigger: "#header",
       duration: 1,
     });
-    tl1.to(".section1 .sec1__decoration", {
-      opacity: 1,
-      trigger: ".section1 .sec1__decoration",
-      duration: 1,
-    });
-    tl1.to(".section1 .sec1__img img", {
-      opacity: 1,
-      trigger: ".section1 .sec1__img img",
-      ease: "power1",
-      duration: 1,
-    });
-    tl1.to(".section1 .sec1__img__decoration", {
-      opacity: 1,
-      trigger: ".section1 .sec1__img__decoration",
-      ease: "power1",
-      duration: 1,
-    });
+    gsap.fromTo(
+      ".section1 .sec1__decoration div:nth-child(odd)",
+      { opacity: 0, x: 50 },
+      {
+        x: 0,
+        opacity: 1,
+        trigger: ".section1 .sec1__decoration div:nth-child(odd)",
+        duration: 1,
+      }
+    );
+    gsap.fromTo(
+      ".section1 .sec1__decoration div:nth-child(even)",
+      { opacity: 0, x: -50 },
+      {
+        x: 0,
+        opacity: 1,
+        trigger: ".section1 .sec1__decoration div:nth-child(even)",
+        duration: 1,
+      }
+    );
+    tl1.fromTo(
+      ".section1 .sec1__img img",
+      { opacity: 0, scale: 0, rotate: 0 },
+      {
+        rotate: "360deg",
+        scale: 1,
+        opacity: 1,
+        trigger: ".section1 .sec1__img img",
+        ease: "power1",
+        duration: 0.5,
+      }
+    );
+    tl1.fromTo(
+      ".section1 .sec1__img__decoration",
+      { opacity: 0, scale: 0, rotate: 0 },
+      {
+        opacity: 1,
+        rotate: "360deg",
+        scale: 1,
+        trigger: ".section1 .sec1__img__decoration",
+        ease: "power1",
+        duration: 0.5,
+      }
+    );
     gsap.to(".section1 .sec1__decoration div:nth-child(odd)", {
       xPercent: -10,
       delay: 1,

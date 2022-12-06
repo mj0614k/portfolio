@@ -35,7 +35,6 @@
 }
 .section1 .sec1__decoration {
   position: absolute;
-  opacity: 0;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -56,12 +55,10 @@
   position: relative;
 }
 .section1 .sec1__img img {
-  opacity: 0;
 }
 .section1 .sec1__img__decoration {
   position: absolute;
   top: -10%;
-  opacity: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
