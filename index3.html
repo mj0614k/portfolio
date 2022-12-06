@@ -1102,5 +1102,22 @@
         eye.style.transform = "rotate(" + rotation + "deg)";
       });
     }
+    // 마우스 커서 바꾸기
+    const Sec1Sec2 = document.querySelector(".section1 .sec2");
+    Sec1Sec2.addEventListener("mousemove", (e) => {
+      let mousePageX = e.clientX;
+      let mousePageY = e.clientY;
+      let centerPageX = window.innerWidth / 2 - mousePageX;
+      let centerPageY = window.innerHeight / 2 - mousePageY;
+      let cursor = document.querySelector(".section1 .sec2 .finger");
+      console.log(mousePageX);
+      console.log(mousePageY);
+
+      gsap.to(cursor, {
+        duration: 0.3,
+        left: mousePageX / 1000,
+        top: mousePageY / 1000,
+      });
+    });
   </script>
 </html>

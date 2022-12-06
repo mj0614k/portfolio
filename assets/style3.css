@@ -155,10 +155,11 @@
   right: 0;
 } */
 .section1 .sec2 .finger {
+  z-index: 10;
   width: 10%;
   position: absolute;
-  bottom: 0px;
-  right: 0;
+  left: 0px;
+  top: 0;
 }
 
 /* section2 */
