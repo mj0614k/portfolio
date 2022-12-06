@@ -984,10 +984,7 @@
       toggleClass: { targets: ".section1 .sec1", className: "not-active" },
     });
 
-    const sections = gsap.utils.toArray(".section1 .sec1");
-
     let tl1 = gsap.timeline();
-    const section1 = gsap.utils.toArray(".section1");
 
     tl1.from("#header", {
       opacity: 0,
@@ -996,7 +993,7 @@
     });
     gsap.fromTo(
       ".section1 .sec1__decoration div:nth-child(odd)",
-      { opacity: 0, x: 50 },
+      { opacity: 0, x: 100 },
       {
         x: 0,
         opacity: 1,
@@ -1006,7 +1003,7 @@
     );
     gsap.fromTo(
       ".section1 .sec1__decoration div:nth-child(even)",
-      { opacity: 0, x: -50 },
+      { opacity: 0, x: -100 },
       {
         x: 0,
         opacity: 1,
@@ -1016,14 +1013,14 @@
     );
     tl1.fromTo(
       ".section1 .sec1__img img",
-      { opacity: 0, scale: 0, rotate: 0 },
+      { opacity: 0, scale: "0", rotate: 0 },
       {
-        rotate: "360deg",
         scale: 1,
+        rotate: 0,
+        ease: "bounce",
         opacity: 1,
         trigger: ".section1 .sec1__img img",
-        ease: "power1",
-        duration: 0.5,
+        duration: 1,
       }
     );
     tl1.fromTo(
@@ -1031,11 +1028,11 @@
       { opacity: 0, scale: 0, rotate: 0 },
       {
         opacity: 1,
-        rotate: "360deg",
+        rotate: 0,
+        ease: "elastic",
         scale: 1,
         trigger: ".section1 .sec1__img__decoration",
-        ease: "power1",
-        duration: 0.5,
+        duration: 1,
       }
     );
     gsap.to(".section1 .sec1__decoration div:nth-child(odd)", {
