@@ -980,13 +980,8 @@
       trigger: ".section1 .sec1",
       start: "center center",
       end: "bottom center",
-
       markers: true,
       toggleClass: { targets: ".section1 .sec1", className: "not-active" },
-      onEnter: () => console.log("onEnter"),
-      onLeave: () => console.log("onLeave"),
-      onEnterBack: () => console.log("onEnterBack"),
-      onLeaveBack: () => console.log("onLeaveBack"),
     });
 
     const sections = gsap.utils.toArray(".section1 .sec1");
@@ -1004,9 +999,16 @@
       trigger: ".section1 .sec1__decoration",
       duration: 1,
     });
-    tl1.to(".section1 .sec1__decoration", {
+    tl1.to(".section1 .sec1__img img", {
       opacity: 1,
-      trigger: ".section1 .sec1__decoration",
+      trigger: ".section1 .sec1__img img",
+      ease: "power1",
+      duration: 1,
+    });
+    tl1.to(".section1 .sec1__img__decoration", {
+      opacity: 1,
+      trigger: ".section1 .sec1__img__decoration",
+      ease: "power1",
       duration: 1,
     });
     gsap.to(".section1 .sec1__decoration div:nth-child(odd)", {

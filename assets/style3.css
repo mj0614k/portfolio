@@ -55,9 +55,13 @@
   z-index: 1;
   position: relative;
 }
+.section1 .sec1__img img {
+  opacity: 0;
+}
 .section1 .sec1__img__decoration {
   position: absolute;
   top: -10%;
+  opacity: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -79,10 +83,10 @@
   margin-top: 10%;
 }
 .section1 .sec1__img__decoration .eye__black {
-  max-width: 70px;
-  max-height: 70px;
-  width: 4vw;
-  height: 4vw;
+  max-width: 60px;
+  max-height: 60px;
+  width: 3.5vw;
+  height: 3.5vw;
   left: 50%;
   transform: translateX(-50%);
   background-color: #46152a;
