@@ -41,8 +41,8 @@
           <h2><span>포</span><span>폴</span><span>이</span><span>얌</span><span>!</span></h2>
           <!-- <span class="arrow"></span> -->
           <img class="arrow" src="assets/img/portfolio__02.png" alt="화살표" />
-          <div class="monsters">
-            <svg id="monsters" viewBox="0 0 500 586">
+          <div class="monsters__wrap">
+            <svg id="monsters" viewBox="0 0 420 486">
               <a href="#section2" class="monsters">
                 <ellipse class="st0" cx="199" cy="412.4" rx="160.3" ry="11.8" />
                 <path
@@ -97,7 +97,7 @@
                 />
               </a>
             </svg>
-            <svg id="monsters" viewBox="440 0 500 586">
+            <svg id="monsters" viewBox="440 0 460 486">
               <a href="#section3" class="monster">
                 <ellipse class="st0" cx="667.3" cy="408.9" rx="160.3" ry="11.8" />
                 <path
@@ -132,7 +132,7 @@
                 />
               </a>
             </svg>
-            <svg id="monsters" viewBox="880 0 500 586">
+            <svg id="monsters" viewBox="915 0 440 486">
               <a href="#section4" class="monsters">
                 <ellipse id="third-monster" class="st0" cx="1093.4" cy="404.9" rx="160.3" ry="11.8" />
                 <path
@@ -1234,7 +1234,7 @@
         scrollTrigger: {
           trigger: ".section1 .sec2",
           scrub: 1,
-          start: "-=500",
+          start: "-=600",
           end: "+=000",
         },
       }
@@ -1250,7 +1250,7 @@
         scrollTrigger: {
           trigger: ".section1 .sec2",
           scrub: 1,
-          start: "-=400",
+          start: "-=500",
           end: "+=000",
         },
       }
@@ -1266,7 +1266,7 @@
         scrollTrigger: {
           trigger: ".section1 .sec2",
           scrub: 1,
-          start: "-=300",
+          start: "-=400",
           end: "+=000",
         },
       }
@@ -1282,7 +1282,7 @@
         scrollTrigger: {
           trigger: ".section1 .sec2",
           scrub: 1,
-          start: "-=200",
+          start: "-=300",
           end: "+=000",
         },
       }
@@ -1294,11 +1294,11 @@
         opacity: 1,
         y: 0,
         duration: 1,
-        ease: "back",
+        ease: "bounce",
         scrollTrigger: {
           trigger: ".section1 .sec2",
           scrub: 1,
-          start: "-=100",
+          start: "-=250",
           end: "+=000",
         },
       }
@@ -1314,7 +1314,58 @@
         scrollTrigger: {
           trigger: ".section1 .sec2",
           scrub: 1,
-          start: "-=100",
+          start: "-=250",
+          end: "+=100",
+        },
+      }
+    );
+    gsap.fromTo(
+      ".section1 .sec2 #monsters:nth-child(1)",
+      { y: -100, opacity: 0 },
+      {
+        delay: 1,
+        opacity: 1,
+        y: 0,
+        duration: 0.1,
+        ease: "elastic",
+        scrollTrigger: {
+          trigger: ".section1 .sec2 #monsters:nth-child(1)",
+          scrub: 1,
+          start: "-=500",
+          end: "+=100",
+        },
+      }
+    );
+    gsap.fromTo(
+      ".section1 .sec2 #monsters:nth-child(2)",
+      { y: -100, opacity: 0 },
+      {
+        delay: 1,
+        opacity: 1,
+        y: 0,
+        duration: 0.1,
+        ease: "bounce",
+        scrollTrigger: {
+          trigger: ".section1 .sec2 #monsters:nth-child(2)",
+          scrub: 1,
+          start: "-=500",
+          end: "+=100",
+        },
+      }
+    );
+    gsap.fromTo(
+      ".section1 .sec2 #monsters:nth-child(3)",
+      { y: -100, opacity: 0 },
+      {
+        delay: 1,
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "bounce",
+        scrollTrigger: {
+          trigger: ".section1 .sec2 #monsters:nth-child(3)",
+          scrub: 1,
+          start: "-=500",
           end: "+=100",
         },
       }
