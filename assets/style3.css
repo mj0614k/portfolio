@@ -417,12 +417,14 @@
   background-color: #ff6235;
   z-index: 10;
   width: 500%;
+  height: 100vh;
   display: flex;
   position: relative;
 }
 .section3 .site {
   position: relative;
   background-color: #f7e8d6;
+  overflow-x: hidden;
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
