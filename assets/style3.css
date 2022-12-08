@@ -115,8 +115,6 @@
   position: absolute;
 } */
 .section1 .sec2 {
-  z-index: 10;
-  position: relative;
   background-color: #1b9142;
   height: 100vh;
   display: flex;

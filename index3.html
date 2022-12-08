@@ -1753,8 +1753,8 @@
     document.querySelector(".section1 .sec2").addEventListener("mousemove", (e) => {
       gsap.to(".section1 .sec2 .finger", {
         duration: 0.3,
-        left: e.screenX / 1,
-        top: e.screenY / 1,
+        left: e.screenX,
+        top: e.screenY,
       });
     });
     // 부드러운 메뉴 이동
