@@ -116,6 +116,8 @@
 } */
 .section1 .sec2 {
   background-color: #1b9142;
+  position: relative;
+  z-index: 10;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -231,6 +233,9 @@
   font-size: 1.5vw;
   text-align: center;
   font-family: "BMJua";
+}
+.section2 .sec1 p span {
+  min-width: 0.5vw;
 }
 .section2 .sec2 {
   /* .section2 .sec3,
