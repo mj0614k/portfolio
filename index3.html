@@ -1660,9 +1660,25 @@
         { y: -30, opacity: 0, },
         { opacity: 1, y: 0, duration: 0.3, ease: "power3", scrollTrigger: {   trigger: ".section2 .sec1",   scrub: 1,   start: "-="+(320 - (5*i)),   end: "+="+(2*i), },}
       );
-    }
-    console.log(text1.length)
+    };
+    
+    // 분홍이 가로모드
+    const sections = gsap.utils.toArray(".section3 .sec2 .site");
 
+      gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".section3 .sec2",
+          pin: true,
+          scrub: 1,
+          snap: 1 / (sections.length -1),
+          // 스크롤할 height값이 달라짐. 즉 스크롤 속도가 달라짐
+          end: "+=1500",
+          markers: true,
+        },
+      });
+    
     // tl1.from("#header", {
     //   opacity: 0,
     //   scrollTrigger: "#header",

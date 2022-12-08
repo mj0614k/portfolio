@@ -208,12 +208,12 @@
   position: relative;
 }
 .section2 .sec1 #monsters {
-  width: 40%;
+  width: 30%;
   left: 0;
   right: 0;
   z-index: 1;
   position: absolute;
-  top: -15%;
+  top: -25%;
   margin: 0 auto;
 }
 .section2 .sec1 h2 {
@@ -280,6 +280,11 @@
   width: 10vw;
   height: 10vw;
   background-color: #1b9142;
+  transition: all 0.3s;
+  transform: rotate(0)
+}
+.section2 .site__title .ball:hover {
+  transform: rotate(360deg)
 }
 .section2 .site__contents {
   display: flex;
@@ -306,6 +311,11 @@
   text-align: center;
   height: 4vw;
   font-family: "BMJua";
+  transition: all 0.3s;
+}
+.section2 .site__left .view:hover {
+  color: #bef0cd;
+  background-color: #1b9142;
 }
 .section2 .site__left .arrow {
   width: 6vw;
@@ -339,6 +349,11 @@
   text-align: center;
   height: 4vw;
   font-family: "BMJua";
+  transition: all 0.3s;
+}
+.section2 .site__right .view:hover {
+  color: #bef0cd;
+  background-color: #1b9142;
 }
 .section2 .site__right .desc {
   background-color: rgba(27, 145, 66, 0.2);
@@ -359,6 +374,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  overflow: hidden;
   align-items: center;
   height: 100vh;
 }
@@ -399,18 +415,15 @@
 .section3 .sec6 { */
   background-color: #ff6235;
   z-index: 10;
+  width: 500%;
   display: flex;
   position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .section3 .site {
-  margin-bottom: 5%;
-  width: 90%;
   position: relative;
-  border-radius: 20px;
+  height: 100vh;
   background-color: #f7e8d6;
+  width: 100%;
   box-sizing: border-box;
   padding: 20px;
   display: flex;
@@ -435,7 +448,12 @@
   color: #f7e8d6;
   width: 10vw;
   height: 10vw;
+  transition: all 0.3s;
+  transform: rotate(0);
   background-color: #ff6235;
+}
+.section3 .site__title .ball:hover {
+  transform: rotate(360deg)
 }
 .section3 .site__contents {
   display: flex;
@@ -667,9 +685,6 @@
   align-items: center;
 }
 .section4 .site {
-  width: 90%;
-  margin-bottom: 5%;
-  border-radius: 20px;
   background-color: #f7e8d6;
   position: relative;
   box-sizing: border-box;
@@ -698,6 +713,11 @@
   width: 10vw;
   height: 10vw;
   background-color: #ff9d00;
+  transition: all 0.3s;
+  transform: rotate(0)
+}
+.section4 .site__title .ball:hover {
+  transform: rotate(360deg)
 }
 .section4 .site__contents {
   display: flex;
