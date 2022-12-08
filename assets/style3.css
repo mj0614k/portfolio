@@ -374,8 +374,9 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  overflow: hidden;
   align-items: center;
+  width: 100%;
+  overflow: hidden;
   height: 100vh;
 }
 .section3 .sec1 .box {
@@ -421,7 +422,6 @@
 }
 .section3 .site {
   position: relative;
-  height: 100vh;
   background-color: #f7e8d6;
   width: 100%;
   box-sizing: border-box;
