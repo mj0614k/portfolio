@@ -1733,7 +1733,7 @@
           trigger: ".section3 .sec2",
           pin: true,
           scrub: 1,
-          start: "top",
+          start: "top 0%",
           end: "+=3000",
           markers: true,
         },
@@ -1781,9 +1781,14 @@
     });
     gsap.fromTo(
       ".section4 .sec1 .box p span",
-      { delay: 0.3, opacity: 0, y: -30, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section3 .sec1",   start: "top 30%;" },},
-      { delay: 0.3, opacity: 1, y: 0, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section3 .sec1",   start: "top 30%;" },}
+      { delay: 0.3, opacity: 0, y: -30, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section4 .sec1",   start: "top 30%;" },},
+      { delay: 0.3, opacity: 1, y: 0, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section4 .sec1",   start: "top 30%;" },}
     );
+
+    document.querySelector(".section1 .sec2").addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX - 25 + "px"; // 커서에 스타일(위치값) 추가
+        cursor.style.top = e.clientY - 25 + "px";
+    });
 
     // 마우스 커서 바꾸기
     document.querySelector(".section1 .sec2").addEventListener("mousemove", (e) => {
@@ -1802,4 +1807,5 @@
       });
     });
   </script>
+  
 </html>
