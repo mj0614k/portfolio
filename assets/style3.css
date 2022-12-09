@@ -157,7 +157,6 @@
 } */
 .section1 .sec2 #monsters {
   transition: all 0.3s;
-  overflow: hidden;
   width: 60%;
   display: flex;
   justify-content: center;
@@ -165,6 +164,16 @@
 .section1 .sec2 #monsters a {
   cursor: none;
   position: relative;
+}
+.section1 .sec2 #monsters a:hover .bubble {
+  display: block;
+}
+.section1 .sec2 #monsters a .bubble{
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  top: -40%;
+  display: none;
 }
 .section1 .sec2 #monsters .monster1 div{
   position: relative;
