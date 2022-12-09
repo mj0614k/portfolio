@@ -1788,9 +1788,8 @@
     // 마우스 커서 바꾸기
     document.querySelector(".section1 .sec2").addEventListener("mousemove", (e) => {
       gsap.to(".section1 .sec2 .finger", {
-        duration: 0.3,
-        left: e.offsetX,
-        top: e.offsetY,
+        left: e.clientX,
+        top: e.clientY,
       });
       console.log(e.offsetX, e.offsetY)
     });
