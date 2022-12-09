@@ -1661,11 +1661,11 @@
       { y: -100, opacity: 0 },
       { delay: 1, opacity: 1, y: 0, duration: 1, scrollTrigger: {   trigger: ".section1 .sec2",   scrub: 1,   start: "-=250",   end: "+=100", },}
     );
-    gsap.fromTo(
-      ".section1 .sec2 .finger",
-      {opacity: 0 },
-      { opacity: 1, duration: 1, scrollTrigger: {   trigger: ".section1 .sec2",   scrub: 1,   start: "-=250",   end: "+=100", },}
-    );
+    // gsap.fromTo(
+    //   ".section1 .sec2 .finger",
+    //   {opacity: 0 },
+    //   { opacity: 1, duration: 1, scrollTrigger: {   trigger: ".section1 .sec2",   scrub: 1,   start: "-=250",   end: "+=100", },}
+    // );
     gsap.fromTo(
       ".section1 .sec2 #monsters .monster1 div",
       { opacity: 0, y: 300, duration: 5, ease: "elastic", stagger: 0.5, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section1 .sec2", start: "top 20%"}},
@@ -1789,8 +1789,8 @@
     document.querySelector(".section1 .sec2").addEventListener("mousemove", (e) => {
       gsap.to(".section1 .sec2 .finger", {
         duration: 0.3,
-        left: e.screenX,
-        top: e.screenY,
+        left: e.offsetX,
+        top: e.offsetY,
       });
     });
     // 부드러운 메뉴 이동
