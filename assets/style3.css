@@ -159,6 +159,7 @@
   transition: all 0.3s;
   width: 60%;
   display: flex;
+  overflow: hidden;
   justify-content: center;
 }
 .section1 .sec2 #monsters a {
