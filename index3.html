@@ -1368,7 +1368,6 @@
       trigger: ".section1 .sec1",
       start: "center center",
       end: "bottom center",
-      markers: true,
       toggleClass: { targets: ".section1 .sec1", className: "not-active" },
     });
 
@@ -1686,13 +1685,24 @@
     gsap.fromTo(
       ".section2 .sec1 .box h2",
       { y: -200, opacity: 0 },
-      { delay: 1, opacity: 1, y: -200, duration: 5, scrollTrigger: {   trigger: ".section2 .sec1",   scrub: 1,   start: "-=500",   end: "+=000", },}
+      { delay: 1, opacity: 1, y: -200, duration: 5, scrollTrigger: {   trigger: ".section2 .sec1",   scrub: 1,   start: "top 30%",   end: "top 30%", },}
     );
     gsap.fromTo(
       ".section2 .sec1 .box h2",
-      { y: -200, opacity: 0 },
-      { delay: 1, opacity: 1, y: 0, duration: 3, ease: "bounce", scrollTrigger: {   trigger: ".section2 .sec1",   scrub: 1,   start: "-=200",   end: "+=000", },}
+      { y: -200, opacity: 1 },
+      { delay: 1, opacity: 1, y: 0, duration: 3, ease: "bounce", scrollTrigger: {   trigger: ".section2 .sec1",   scrub: 1,   start: "top 20%",   end: "top 30%", },}
     );
+
+    // gsap.fromTo(
+    //   ".section2 .sec1 .box h2",
+    //   { y: -200, opacity: 0 },
+    //   { delay: 1, opacity: 1, y: -200, duration: 5, scrollTrigger: {   trigger: ".section2 .sec1",   scrub: 1,   start: "-=500",   end: "+=000", },}
+    // );
+    // gsap.fromTo(
+    //   ".section2 .sec1 .box h2",
+    //   { y: -200, opacity: 0 },
+    //   { delay: 1, opacity: 1, y: 0, duration: 3, ease: "bounce", scrollTrigger: {   trigger: ".section2 .sec1",   scrub: 1,   start: "-=200",   end: "+=000", },}
+    // );
 
     document.querySelectorAll(".section2 .sec1 .box p").forEach((text) => {
       let splitText = text.innerText;
@@ -1700,12 +1710,18 @@
       splitWrap = "<span style='display: inline-block;'`>" + splitWrap + "</span>";
       text.innerHTML = splitWrap;
     });
-    let text1 = document.querySelectorAll(".section2 .sec1 .box p span");
-      gsap.fromTo(
-        ".section2 .sec1 .box p span",
-        { delay: 0.3, opacity: 0, y: -30, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section2 .sec1",   start: "top 30%;" },},
-        { delay: 0.3, opacity: 1, y: 0, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section2 .sec1",   start: "top 30%;" },}
-      );
+    gsap.fromTo(
+      ".section2 .sec1 .box p span",
+      { delay: 0.3, opacity: 0, y: -30, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section2 .sec1",   start: "top 30%;" },},
+      { delay: 0.3, opacity: 1, y: 0, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section2 .sec1",   start: "top 30%;" },}
+    );
+
+    // 분홍이 섹션
+    // gsap.fromTo(
+    //   ".section3 .sec1",
+      // { opacity: 1, y: "100vh", ease: "power3", scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section2 .sec2",   start: "bottom", markers: true},},
+      // { opacity: 1, y: 0, ease: "power3", scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section3 .sec2",   end: "top 10%", markers: true},}
+    // )
     
     // 분홍이 가로모드
     const sections = gsap.utils.toArray(".section3 .sec2 .site");
@@ -1717,59 +1733,58 @@
           trigger: ".section3 .sec2",
           pin: true,
           scrub: 1,
-          // snap: 1 / (sections.length -1),
-          // 스크롤할 height값이 달라짐. 즉 스크롤 속도가 달라짐
+          start: "top",
           end: "+=3000",
           markers: true,
         },
       });
-    
-    // tl1.from("#header", {
-    //   opacity: 0,
-    //   scrollTrigger: "#header",
-    //   duration: 1,
-    // });
-    // tl1.to(".section1 .sec1__decoration", {
-    //   delay: 1,
-    //   duration: 3,
-    //   x: 200,
-    //   scrollTrigger: ".section1 .sec1__decoration",
-    // });
 
-    // gsap.to(".section2", {
-    //   x: 200,
-    //   scrollTrigger: ".section2 .sec2",
-    // });
+    gsap.fromTo(
+      ".section3 .sec1 .box h2",
+      { y: -200, opacity: 0 },
+      { delay: 1, opacity: 1, y: -200, duration: 5, scrollTrigger: {   trigger: ".section3 .sec1",   scrub: 1,   start: "top 30%",   end: "top 30%", },}
+    );
+    gsap.fromTo(
+      ".section3 .sec1 .box h2",
+      { y: -200, opacity: 1 },
+      { delay: 1, opacity: 1, y: 0, duration: 3, ease: "bounce", scrollTrigger: {   trigger: ".section3 .sec1",   scrub: 1,   start: "top 20%",   end: "top 30%", },}
+    );
 
-    // gsap.to(".intro__decoration span:nth-child(odd)", {
-    //   scrollTrigger: {
-    //     trigger: ".intro__decoration span",
-    //     toggleActions: "restart none reverse none",
-    //     start: "top",
-    //     end: () => `+=${document.querySelector(".intro__decoration span:nth-child(odd)").offsetHeight}`,
-    //   },
+    document.querySelectorAll(".section3 .sec1 .box p").forEach((text) => {
+      let splitText = text.innerText;
+      let splitWrap = splitText.split("").join("</span><span style='display: inline-block;'>");
+      splitWrap = "<span style='display: inline-block;'`>" + splitWrap + "</span>";
+      text.innerHTML = splitWrap;
+    });
+    gsap.fromTo(
+      ".section3 .sec1 .box p span",
+      { delay: 0.3, opacity: 0, y: -30, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section3 .sec1",   start: "top 30%;" },},
+      { delay: 0.3, opacity: 1, y: 0, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section3 .sec1",   start: "top 30%;" },}
+    );
 
-    //   duration: 40,
-    //   markers: true,
-    //   xPercent: -100,
-    //   scrub: true,
-    //   stagger: 0.2,
-    // });
 
-    // 눈 움직임
-    // document.addEventListener("mousemove", eyeMoving);
-    // function eyeMoving() {
-    //   const introEye = document.querySelectorAll(".sec1__img__decoration .eye__white");
-    //   introEye.forEach((eye) => {
-    //     let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
-    //     let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
-    //     // console.log(x);
+    gsap.fromTo(
+      ".section4 .sec1 .box h2",
+      { y: -200, opacity: 0 },
+      { delay: 1, opacity: 1, y: -200, duration: 5, scrollTrigger: {   trigger: ".section4 .sec1",   scrub: 1,   start: "top 30%",   end: "top 30%", },}
+    );
+    gsap.fromTo(
+      ".section4 .sec1 .box h2",
+      { y: -200, opacity: 1 },
+      { delay: 1, opacity: 1, y: 0, duration: 3, ease: "bounce", scrollTrigger: {   trigger: ".section4 .sec1",   scrub: 1,   start: "top 20%",   end: "top 30%", },}
+    );
+    document.querySelectorAll(".section4 .sec1 .box p").forEach((text) => {
+      let splitText = text.innerText;
+      let splitWrap = splitText.split("").join("</span><span style='display: inline-block;'>");
+      splitWrap = "<span style='display: inline-block;'`>" + splitWrap + "</span>";
+      text.innerHTML = splitWrap;
+    });
+    gsap.fromTo(
+      ".section4 .sec1 .box p span",
+      { delay: 0.3, opacity: 0, y: -30, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section3 .sec1",   start: "top 30%;" },},
+      { delay: 0.3, opacity: 1, y: 0, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section3 .sec1",   start: "top 30%;" },}
+    );
 
-    //     let radian = Math.atan2(event.clientX - x, event.clientY - y);
-    //     let rotation = radian * (180 / Math.PI) * -1 + 180;
-    //     eye.style.transform = "rotate(" + rotation + "deg)";
-    //   });
-    // }
     // 마우스 커서 바꾸기
     document.querySelector(".section1 .sec2").addEventListener("mousemove", (e) => {
       gsap.to(".section1 .sec2 .finger", {
