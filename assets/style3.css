@@ -168,12 +168,15 @@
 }
 .section1 .sec2 #monsters a:hover .bubble {
   display: block;
+  top: -40%;
+  opacity: 1;
 }
 .section1 .sec2 #monsters a .bubble{
   width: 60%;
   position: absolute;
+  transition: all 0.3s;
   left: 20%;
-  top: -40%;
+  top: -30%;
   display: none;
 }
 .section1 .sec2 #monsters .monster1 div{
