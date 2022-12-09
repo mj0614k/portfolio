@@ -157,7 +157,7 @@
 } */
 .section1 .sec2 #monsters {
   transition: all 0.3s;
-  overflow: visible;
+  overflow: hidden;
   width: 60%;
   display: flex;
   justify-content: center;
@@ -166,12 +166,7 @@
   cursor: none;
   position: relative;
 }
-.section1 .sec2 #monsters .monster1 .monster{
-  position: relative;
-  bottom: 4%;
-  z-index: 5;
-}
-.section1 .sec2 #monsters .monster1 .monsters{
+.section1 .sec2 #monsters .monster1 div{
   position: relative;
   bottom: 4%;
   z-index: 5;
@@ -275,7 +270,6 @@
   background-color: #1b9142;
   z-index: 10;
   display: flex;
-  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   position: relative;
@@ -415,6 +409,9 @@
 }
 
 /* section3 */
+.section3 {
+  overflow: hidden;
+}
 .section3 .sec1 {
   z-index: 10;
   background-color: #ff6235;

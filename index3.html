@@ -44,17 +44,23 @@
           <img class="arrow" src="assets/img/portfolio__02.png" alt="화살표" />
           <div id="monsters">
             <a href="#section2" class="monster1">
-              <img class="monster" src="assets/img/portfolio__15.png" alt="">
+              <div>
+                <img class="monster" src="assets/img/portfolio__15.png" alt="">
+              </div>
               <img class="shadow__top" src="assets/img/portfolio__13.png" alt="그림자">
               <img class="shadow__bottom" src="assets/img/portfolio__14.png" alt="그림자">
             </a>
             <a href="#section3" class="monster1">
-              <img class="monsters" src="assets/img/portfolio__16.png" alt="">
+              <div>
+                <img class="monsters" src="assets/img/portfolio__16.png" alt="">
+              </div>
               <img class="shadow__top" src="assets/img/portfolio__13.png" alt="그림자">
               <img class="shadow__bottom" src="assets/img/portfolio__14.png" alt="그림자">
             </a>
             <a href="#section4" class="monster1">
-              <img class="monster" src="assets/img/portfolio__17.png" alt="">
+              <div>
+                <img class="monster" src="assets/img/portfolio__17.png" alt="">
+              </div>
               <img class="shadow__top" src="assets/img/portfolio__13.png" alt="그림자">
               <img class="shadow__bottom" src="assets/img/portfolio__14.png" alt="그림자">
             </a>
@@ -1659,9 +1665,9 @@
       { opacity: 1, duration: 1, scrollTrigger: {   trigger: ".section1 .sec2",   scrub: 1,   start: "-=250",   end: "+=100", },}
     );
     gsap.fromTo(
-      ".section1 .sec2 #monsters .monster1 img.monster",
-      { opacity: 0, y: -500, ease: "elastic", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section1 .sec2", start: "top 20%"}},
-      { opacity: 1, y: 0, ease: "elastic", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section1 .sec2", start: "top 50%"},}
+      ".section1 .sec2 #monsters .monster1 div",
+      { opacity: 0, y: 300, duration: 5, ease: "elastic", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section1 .sec2", start: "top 20%"}},
+      { opacity: 1, y: 0, duration: 5, ease: "elastic", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section1 .sec2", start: "top 20%"},}
     );
     // gsap.fromTo(
     //   ".section1 .sec2 #monsters .monster1 img:nth-child(1)",
