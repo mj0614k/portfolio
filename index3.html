@@ -1785,11 +1785,6 @@
       { delay: 0.3, opacity: 1, y: 0, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section4 .sec1",   start: "top 30%;" },}
     );
 
-    document.querySelector(".section1 .sec2").addEventListener("mousemove", (e) => {
-        cursor.style.left = e.clientX - 25 + "px"; // 커서에 스타일(위치값) 추가
-        cursor.style.top = e.clientY - 25 + "px";
-    });
-
     // 마우스 커서 바꾸기
     document.querySelector(".section1 .sec2").addEventListener("mousemove", (e) => {
       gsap.to(".section1 .sec2 .finger", {
@@ -1797,7 +1792,9 @@
         left: e.offsetX,
         top: e.offsetY,
       });
+      console.log(e.offsetX, e.offsetY)
     });
+    
     // 부드러운 메뉴 이동
     document.querySelectorAll("a").forEach((el) => {
       el.addEventListener("click", (e) => {
