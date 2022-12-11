@@ -21,7 +21,15 @@
   cursor: pointer;
 }
 #header nav {
-  cursor: pointer;
+  display: flex;
+}
+#header nav li a {
+  color: #f7e8d6;
+  padding: 2vw;
+}
+#header nav li:last-child a {
+  color: #f7e8d6;
+  padding-right: 0vw;
 }
 /* section1 */
 .section1 .sec1 {
@@ -614,12 +622,13 @@
   align-items: center;
 }
 .section3 .sec3__title {
-  margin-bottom: 30px;
   position: relative;
+  margin-bottom: 2%;
 }
 .section3 .sec3__title #monsters {
   width: 40%;
-  left: -30%;
+  left: -40%;
+  top: -30%;
   z-index: 1;
   position: absolute;
 }
@@ -627,12 +636,26 @@
   color: #f7e8d6;
   font-family: "OKDdung";
   text-align: center;
-  margin-bottom: 30px;
+  line-height: 1;
   z-index: 2;
   position: relative;
-  font-size: 9vw;
+  font-size: 5vw;
 }
-.section3 .sec3__title p {
+.section3 .sec3__title a {
+  position: absolute;
+  transform: rotate(90deg);
+  z-index: 1;
+  width: 40%;
+  right: -45%;
+  opacity: 0;
+  top: -60%;
+  transition: all 0.3s;
+}
+.section3 .sec3__desc {
+  width: 60%;
+  min-height: 7vw;
+}
+.section3 .sec3__desc p {
   z-index: 2;
   color: #f7e8d6;
   position: relative;
@@ -640,12 +663,8 @@
   text-align: center;
   font-family: "BMJua";
 }
-.section3 .sec3__title .finger {
-  position: absolute;
-  z-index: 1;
-  width: 40%;
-  right: -30%;
-  top: 20%;
+.section3 .sec3__desc p span {
+  min-width: 0.5vw;
 }
 .section3 .sec3__contents {
   width: 110%;
@@ -658,7 +677,7 @@
 .section3 .sec3__contents span {
   border: 15px solid rgba(251, 167, 135, 1);
   background-color: rgba(253, 131, 91, 1);
-  border-radius: 30px;
+  border-radius: 20%;
   margin: 15px;
   width: 9%;
   padding-bottom: 9%;
@@ -666,6 +685,14 @@
   cursor: pointer;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media(max-width: 1400px){
+  .section3 .sec3__contents span {
+    border: 8px solid rgba(251, 167, 135, 1);
+  }
+  .section3 .sec3__contents span.decoration {
+    display: none;
+  }
 }
 .section3 .sec3__contents span:hover {
   opacity: 1;
@@ -708,7 +735,7 @@
 }
 
 /* section4 */
-.section3 {
+.section4 {
   overflow: hidden;
 }
 .section4 .sec1 {
@@ -762,6 +789,7 @@
 .section4 .sec6 { */
   background-color: #ff9d00;
   z-index: 10;
+  width: 300%;
   display: flex;
   position: relative;
 }
@@ -773,8 +801,7 @@
   border: 3px solid #ff9d00;
   width: 100%;
   height: 100vh;
-  margin: 5% auto;
-  padding: 5%;
+  padding: 1%;
   display: flex;
   flex-direction: column;
 }
@@ -783,7 +810,7 @@
   justify-content: center;
   font-family: "OKDdung";
   color: #ff9d00;
-  margin-bottom: 1%;
+  margin-bottom: 5%;
   text-align: center;
 }
 .section4 .site__title .ball {
