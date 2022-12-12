@@ -1371,12 +1371,12 @@
     // 콘텐츠 나타나기
     gsap.registerPlugin(ScrollTrigger);
 
-    ScrollTrigger.create({
-      trigger: ".section1 .sec1",
-      start: "center center",
-      end: "bottom center",
-      toggleClass: { targets: ".section1 .sec1", className: "not-active" },
-    });
+    // ScrollTrigger.create({
+    //   trigger: ".section1 .sec1",
+    //   start: "center center",
+    //   end: "bottom center",
+    //   toggleClass: { targets: ".section1 .sec1", className: "not-active" },
+    // });
 
     let tl1 = gsap.timeline();
 
@@ -1391,7 +1391,6 @@
       {
         x: -200,
         opacity: 1,
-        trigger: ".section1 .sec1__decoration div:nth-child(odd)",
         duration: 1,
       },
       "a"
@@ -1402,7 +1401,6 @@
       {
         x: -100,
         opacity: 1,
-        trigger: ".section1 .sec1__decoration div:nth-child(even)",
         duration: 1,
       },
       "a"
@@ -1415,86 +1413,86 @@
       text.innerHTML = splitWrap;
     });
 
-    tl1.to(".section1 .sec1__decoration div span:nth-child(1)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "b");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(10)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "b");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(19)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "b");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(28)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "b");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(1)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "c");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(10)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "c");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(19)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "c");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(28)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "c");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(1)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "b");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(10)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "b");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(19)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "b");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(28)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "b");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(1)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "c");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(10)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "c");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(19)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "c");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(28)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "c");
 
-    tl1.to(".section1 .sec1__decoration div span:nth-child(2)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "c");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(11)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "c");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(20)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "c");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(29)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "c");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(2)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "d");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(11)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "d");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(20)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "d");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(29)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "d");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(2)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "c");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(11)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "c");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(20)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "c");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(29)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "c");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(2)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "d");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(11)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "d");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(20)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "d");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(29)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "d");
 
-    tl1.to(".section1 .sec1__decoration div span:nth-child(3)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "d");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(12)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "d");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(21)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "d");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(30)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "d");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(3)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "e");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(12)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "e");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(21)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "e");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(30)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "e");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(3)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "d");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(12)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "d");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(21)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "d");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(30)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "d");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(3)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "e");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(12)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "e");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(21)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "e");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(30)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "e");
 
-    tl1.to(".section1 .sec1__decoration div span:nth-child(4)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "e");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(13)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "e");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(22)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "e");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(31)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "e");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(4)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "f");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(13)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "f");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(22)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "f");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(31)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "f");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(4)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "e");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(13)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "e");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(22)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "e");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(31)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "e");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(4)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "f");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(13)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "f");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(22)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "f");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(31)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "f");
 
-    tl1.to(".section1 .sec1__decoration div span:nth-child(5)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "f");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(14)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "f");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(23)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "f");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(32)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "f");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(5)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "g");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(14)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "g");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(23)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "g");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(32)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "g");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(5)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "f");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(14)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "f");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(23)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "f");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(32)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "f");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(5)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "g");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(14)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "g");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(23)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "g");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(32)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "g");
 
-    tl1.to(".section1 .sec1__decoration div span:nth-child(6)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "g");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(15)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "g");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(24)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "g");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(33)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "g");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(6)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "h");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(15)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "h");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(24)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "h");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(33)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "h");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(6)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "g");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(15)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "g");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(24)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "g");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(33)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "g");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(6)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "h");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(15)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "h");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(24)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "h");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(33)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "h");
 
-    tl1.to(".section1 .sec1__decoration div span:nth-child(7)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "h");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(16)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "h");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(25)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "h");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(34)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "h");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(7)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "i");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(16)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "i");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(25)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "i");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(34)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "i");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(7)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "h");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(16)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "h");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(25)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "h");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(34)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "h");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(7)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "i");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(16)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "i");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(25)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "i");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(34)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "i");
 
-    tl1.to(".section1 .sec1__decoration div span:nth-child(8)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "i");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(17)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "i");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(26)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "i");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(35)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "i");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(8)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "j");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(17)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "j");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(26)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "j");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(35)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "j");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(8)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "i");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(17)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "i");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(26)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "i");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(35)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "i");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(8)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "j");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(17)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "j");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(26)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "j");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(35)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "j");
 
-    tl1.to(".section1 .sec1__decoration div span:nth-child(9)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "j");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(18)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "j");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(27)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "j");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(36)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#F7E8D6" }, "j");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(9)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "k");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(18)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "k");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(27)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "k");
-    tl1.to(".section1 .sec1__decoration div span:nth-child(36)", { x: 0, opacity: 1, trigger: ".section1 .sec1__decoration div", duration: 0.25, color: "#1b9142" }, "k");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(9)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "j");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(18)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "j");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(27)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "j");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(36)", { x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6" }, "j");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(9)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "k");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(18)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "k");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(27)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "k");
+    tl1.to(".section1 .sec1__decoration div span:nth-child(36)", { x: 0, opacity: 1, duration: 0.25, color: "#1b9142" }, "k");
 
     tl1.fromTo(
       ".section1 .sec1__img img",
@@ -1504,7 +1502,6 @@
         rotate: 0,
         ease: "elastic",
         opacity: 1,
-        trigger: ".section1 .sec1__img img",
         duration: 2,
       }
     );
@@ -1517,7 +1514,6 @@
         ease: "elastic",
         duration: 2,
         rotate: 0,
-        trigger: ".section1 #canvas",
       }
     )
     tl1.fromTo(
@@ -1528,7 +1524,6 @@
         opacity: 1,
         duration: 2,
         rotate: 0,
-        trigger: "#header",
       }
     )
     // tl1.fromTo(
@@ -1823,11 +1818,11 @@
     );
 
     // ABOUT 나타내기
-    gsap.fromTo(
-      ".section5 .sec1__decoration div:nth-child(1)",
-      { opacity: 0, x: -300, ease: "power3", scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section5 .sec1",   start: "top 0%;" },},
-      { opacity: 1, x: 0,}
-    );
+    // gsap.fromTo(
+    //   ".section5 .sec1__decoration div:nth-child(1)",
+    //   { opacity: 0, x: -300, ease: "power3", scrollTrigger: { toggleActions: "restart none reverse none", trigger: ".section5 .sec1",   start: "top 0%;" },},
+    //   { opacity: 1, x: 0,}
+    // );
     // gsap.fromTo(
     //   ".section5 .sec1 h2",
     //   { delay: 0.3, opacity: 0, y: -30, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section5 .sec1",   start: "top 30%;" },},
@@ -1845,10 +1840,9 @@
     //   "a"
     // );
 
-    gsap.fromTo(
+    gsap.to(
       ".section5 .sec4 p",
-      { opacity: 0, y: -300, },
-      { opacity: 1, y: 0, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", scrub: 1, trigger: ".section5 .sec4",   start: "top 30%;", end: "+=100" },}
+      { opacity: 1, y: 100, duration: 5, ease:"power3", scrollTrigger: {   toggleActions: "restart none reverse none", markers: true, trigger: ".section5 .sec3",   scrub: 1,   start: "top 60%",   end: "top 30%", },}
     );
 
     // 노랑이 가로모드

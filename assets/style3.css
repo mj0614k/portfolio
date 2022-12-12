@@ -1318,6 +1318,7 @@
   margin-top: 2%;
   color: #107531;
   font-family: "OKDdung";
+  transition: all 0.3s;
   font-size: 4vw;
 }
 .section5 .sec4 a:hover {
