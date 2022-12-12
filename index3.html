@@ -1857,24 +1857,25 @@
       { delay: 3, opacity: 1, duration: 2, stagger: 0.05, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec1",},}
     );
     gsap.to(
-      ".section5 .sec2 .bg",
-      { rotate: 540, opacity: 1, duration: 5, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec2", start: "top 20%"},}
+      ".section5 .sec2 .coin",
+      { rotate: 720, opacity: 1, duration: 5, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec2",}}
     );
 
-    // gsap.fromTo(
-    //   ".section5 .sec2 .coin .back",
-    //   { y: -200, opacity: 1, duration: 5, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec2", start: "top 20%"},},
-    //   { y: 0, opacity: 1, duration: 5, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec2", start: "top 20%"},}
-    // );
+    gsap.fromTo(
+      ".section5 .sec2 .coin .back",
+      { delay: 3, opacity: 0, duration: 0.03, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec2", start: "top 0%"},},
+      { delay: 3, opacity: 1, duration: 0.03, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec2", start: "top 0%"},}
+    );
     gsap.fromTo(
       ".section5 .sec2 .coin .front",
       { delay: 3, y: -500, opacity: 0, ease: "elastic", duration: 0.03, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec2", start: "top 0%"},},
       { delay: 3, y: 0, opacity: 1, ease: "elastic", x: 0, duration: 0.03, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec2", start: "top 0%"},}
     );
 
-    gsap.to(
+    gsap.fromTo(
       ".section5 .sec4 p",
-      { y: 0, delay: 1, opacity: 1, duration: 3, stagger: 0, ease: "power3", scrollTrigger: {  markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec4",   scrub: true,   start: "top 20%;"},}
+      { y: -100, delay: 1, opacity: 1, duration: 3, ease: "power3", scrollTrigger: {  markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec4",   scrub: true,   start: "top center", end: "top bottom"},},
+      { y: 0, delay: 1, opacity: 1, duration: 3, ease: "power3", scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec4",   scrub: true},}
     );
 
     // 노랑이 가로모드

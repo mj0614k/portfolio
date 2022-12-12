@@ -1114,13 +1114,13 @@
 .section5 .sec2 .coin {
   width: 30%;
   position: relative;
+  opacity: 0;
   margin: 5%;
 }
 .section5 .sec2 .coin .bg {
   position: absolute;
   width: 140%;
   top: -20%;
-  opacity: 0;
   z-index: 1;
   left: -20%;
 }
@@ -1214,22 +1214,22 @@
   transform: rotateY(180deg) !important;
 }
 .section5 .sec2 .coin:hover .arrow1 {
-  opacity: 1;
+  opacity: 1 !important;
 }
 .section5 .sec2 .coin:hover .arrow1__text {
-  opacity: 1;
+  opacity: 1 !important;
 }
 .section5 .sec2 .coin:hover .arrow2 {
-  opacity: 1;
+  opacity: 1 !important;
 }
 .section5 .sec2 .coin:hover .arrow2__text {
-  opacity: 1;
+  opacity: 1 !important;
 }
 .section5 .sec2 .coin:hover .arrow3 {
-  opacity: 1;
+  opacity: 1 !important;
 }
 .section5 .sec2 .coin:hover .arrow3__text {
-  opacity: 1;
+  opacity: 1 !important;
 }
 .section5 .sec2 .coin .back {
   transform: rotateY(-180deg);
@@ -1320,7 +1320,6 @@
   justify-content: center;
 }
 .section5 .sec4 p {
-  translate: 0, -100;
   font-size: 9vw;
   display: block;
   line-height: 1.2;
