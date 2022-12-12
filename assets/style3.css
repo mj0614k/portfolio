@@ -734,6 +734,9 @@
 /* section4 */
 .section4 {
   overflow: hidden;
+  background-color: #ff9d00;
+  z-index: 5;
+  position: relative;
 }
 .section4 .sec1 {
   background-color: #ff9d00;
@@ -788,6 +791,7 @@
   background-color: #ff9d00;
   z-index: 10;
   position: relative;
+  width: 300%;
 }
 .section4 .site {
   background-color: #f7e8d6;
@@ -798,7 +802,6 @@
   width: 100%;
   height: 100vh;
   padding: 1%;
-  flex-direction: column;
 }
 .section4 .site.site2 {
   left: -100%;
