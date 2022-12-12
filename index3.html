@@ -1925,13 +1925,13 @@
     );
     gsap.fromTo(
       ".section5 .sec4 p",
-      { y: -50, delay: 1, opacity: 0, duration: 3, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec4", start: "top 0%" },},
-      { y: 0, delay: 1, opacity: 1, duration: 3, stagger: 0.3, ease: "power3", scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec4",},}
+      { y: -50, opacity: 0, duration: 3, ease: "power3", scrollTrigger: { toggleActions: "restart none reverse none", trigger: ".section5 .sec4 p" },},
+      { y: 0, opacity: 1, duration: 3, stagger: 0.3, ease: "power3",}
     );
     gsap.fromTo(
       ".section5 .sec4 a",
-      { y: -50, delay: 3, scale: 0, opacity: 0, scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec4", start: "top 0%" },},
-      { y: 0, delay: 3, scale: 1, opacity: 1, duration: 2, ease: "power3", scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec4", start: "top 0%"},}
+      { y: -50, scale: 0, opacity: 0,},
+      { y: 0, scale: 1, opacity: 1, duration: 2, ease: "power3", scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec4 a"},}
     );
 
     // 노랑이 가로모드
