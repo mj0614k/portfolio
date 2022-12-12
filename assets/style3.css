@@ -854,7 +854,12 @@
   line-height: 4vw;
   text-align: center;
   height: 4vw;
+  transition: all 0.3s;
   font-family: "BMJua";
+}
+.section4 .site__left .view:hover {
+  background-color: #ff9d00;
+  color: #ffcc79;
 }
 .section4 .site__left .arrow {
   margin-top: 16%;
@@ -889,6 +894,11 @@
   text-align: center;
   height: 4vw;
   font-family: "BMJua";
+  transition: all 0.3s;
+}
+.section4 .site__right .view:hover {
+  background-color: #ff9d00;
+  color: #ffcc79;
 }
 .section4 .site__right .desc {
   background-color: rgba(255, 157, 0, 0.2);
@@ -1194,13 +1204,14 @@
   z-index: 2;
   position: relative;
   transition: transform 1s;
+  backface-visibility: hidden;
   transform-style: preserve-3d;
 }
 .section5 .sec2 .coin .front {
   transform: rotateY(0deg);
 }
 .section5 .sec2 .coin:hover .front {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) !important;
 }
 .section5 .sec2 .coin:hover .arrow1 {
   opacity: 1;
@@ -1303,11 +1314,13 @@
   background-color: #1b9142;
   position: relative;
   z-index: 10;
+  bottom: 0;
   align-items: center;
   height: 100vh;
   justify-content: center;
 }
 .section5 .sec4 p {
+  translate: 0, -100;
   font-size: 9vw;
   display: block;
   line-height: 1.2;
