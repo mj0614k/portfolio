@@ -1853,12 +1853,12 @@
     });
     gsap.fromTo(
       ".section5 .sec1 h2 span",
-      { delay: 3, opacity: 0, duration: 2, stagger: 0.05, x: 0, ease: "power3", scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec1",},},
-      { delay: 3, opacity: 1, duration: 2, stagger: 0.05, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec1",},}
+      { delay: 3, opacity: 0, duration: 2, stagger: 0.05, x: 0, ease: "power3", scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec1", start: "top 30%"},},
+      { delay: 3, opacity: 1, duration: 2, stagger: 0.05, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec1", start: "top 30%"},}
     );
     gsap.to(
       ".section5 .sec2 .coin",
-      { rotate: 720, opacity: 1, duration: 5, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec2",}}
+      { rotate: 720, opacity: 1, duration: 5, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec2", start: "top 30%"}}
     );
 
     gsap.fromTo(
@@ -1873,13 +1873,64 @@
     );
 
     gsap.fromTo(
+      ".section5 .sec3__contents",
+      { delay: 2, y: 0, scale: 0, opacity: 0, x: 0,},
+      { delay: 2, y: 0, scale: 1, opacity: 1, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec3", start: "top 0%"},}
+    );
+    gsap.fromTo(
+      ".section5 .sec3__contents h2",
+      { delay: 3, y: 0, scale: 0, opacity: 0, x: 0,},
+      { delay: 3, y: 0, scale: 1, opacity: 1, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec3", start: "top 0%"},}
+    );
+
+    gsap.fromTo(
+      ".section5 .sec3__contents img:nth-child(2)",
+      { delay: 4, y: 0, scale: 0, opacity: 0, x: 0,},
+      { delay: 4, y: 0, scale: 1, opacity: 1, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec3", start: "top 0%"},}
+    );
+    gsap.fromTo(
+      ".section5 .sec3__contents img:nth-child(3)",
+      { delay: 4.2, y: 0, scale: 0, opacity: 0, x: 0,},
+      { delay: 4.2, y: 0, scale: 1, opacity: 1, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec3", start: "top 0%"},}
+    );
+    gsap.fromTo(
+      ".section5 .sec3 .sec3__contents .sec3__text.text1",
+      { delay: 4.4, y: 0, scale: 0, opacity: 0, x: 0,},
+      { delay: 4.4, y: 0, scale: 1, opacity: 1, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec3", start: "top 0%"},}
+    );
+    gsap.fromTo(
+      ".section5 .sec3 .sec3__contents .sec3__text.text2",
+      { delay: 4.6, y: 0, scale: 0, opacity: 0, x: 0,},
+      { delay: 4.6, y: 0, scale: 1, opacity: 1, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec3", start: "top 0%"},}
+    );
+    gsap.fromTo(
+      ".section5 .sec3 .sec3__contents .sec3__text.text3",
+      { delay: 4.8, y: 0, scale: 0, opacity: 0, x: 0,},
+      { delay: 4.8, y: 0, scale: 1, opacity: 1, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec3", start: "top 0%"},}
+    );
+    gsap.fromTo(
+      ".section5 .sec3 .sec3__contents .sec3__text.text4",
+      { delay: 5, y: 0, scale: 0, opacity: 0, x: 0,},
+      { delay: 5, y: 0, scale: 1, opacity: 1, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec3", start: "top 0%"},}
+    );
+    gsap.fromTo(
+      ".section5 .sec3 .sec3__contents .sec3__text.text5",
+      { delay: 5.2, y: 0, scale: 0, opacity: 0, x: 0,},
+      { delay: 5.2, y: 0, scale: 1, opacity: 1, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec3__contents", start: "top 0%"},}
+    );
+    gsap.fromTo(
+      ".section5 .sec3 .sec3__contents .sec3__text.text6",
+      { delay: 5.4, y: 0, scale: 0, opacity: 0, x: 0,},
+      { delay: 5.4, y: 0, scale: 1, opacity: 1, x: 0, scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec3__contents", start: "top 0%"},}
+    );
+    gsap.fromTo(
       ".section5 .sec4 p",
-      { y: -50, delay: 1, opacity: 0, duration: 3, ease: "power3", scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec4", start: "top 0%" },},
-      { y: 0, delay: 1, opacity: 1, duration: 3, stagger: 0.3, ease: "power3", scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec4", start: "top 0%"},}
+      { y: -50, delay: 1, opacity: 0, duration: 3, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec4", start: "top 0%" },},
+      { y: 0, delay: 1, opacity: 1, duration: 3, stagger: 0.3, ease: "power3", scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec4",},}
     );
     gsap.fromTo(
       ".section5 .sec4 a",
-      { y: -100, delay: 3, scale: 0, opacity: 0, scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec4", start: "top 0%" },},
+      { y: -50, delay: 3, scale: 0, opacity: 0, scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec4", start: "top 0%" },},
       { y: 0, delay: 3, scale: 1, opacity: 1, duration: 2, ease: "power3", scrollTrigger: {  toggleActions: "restart none restart none", trigger: ".section5 .sec4", start: "top 0%"},}
     );
 
