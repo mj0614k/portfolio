@@ -927,10 +927,10 @@
   color: #f7e8d6;
   font-family: "OKDdung";
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
   z-index: 2;
   position: relative;
-  font-size: 9vw;
+  font-size: 5vw;
 }
 .section4 .sec3__contents {
   width: 90%;
@@ -1092,6 +1092,7 @@
   height: 100vh;
   position: relative;
   display: flex;
+  cursor: none;
   justify-content: center;
   align-items: center;
 }
@@ -1099,7 +1100,8 @@
   position: absolute;
   width: 8%;
   right: 0;
-  bottom: 30%;
+  user-select: none;
+  bottom: 0%;
   z-index: 5;
 }
 .section5 .sec2 .coin {
