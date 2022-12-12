@@ -651,6 +651,9 @@
   top: -60%;
   transition: all 0.3s;
 }
+.section3 .sec3__title a:hover {
+  right: -50% !important;
+}
 .section3 .sec3__desc {
   width: 60%;
   min-height: 7vw;
@@ -687,7 +690,7 @@
   background-repeat: no-repeat;
 }
 .section3 .sec3__contents span:hover {
-  opacity: 1;
+  opacity: 1 !important;
   transition: all 0.3s;
 }
 .section3 .sec3__contents span:nth-child(2) {
@@ -1336,6 +1339,9 @@
 @media(max-width: 846px){
   .section3 .sec3__contents span {
     border: 8px solid rgba(251, 167, 135, 1);
+  }
+  .section3 .sec3__desc {
+    width: 90%;
   }
 }
 @media(max-width: 700px){
