@@ -686,14 +686,6 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media(max-width: 1400px){
-  .section3 .sec3__contents span {
-    border: 8px solid rgba(251, 167, 135, 1);
-  }
-  .section3 .sec3__contents span.decoration {
-    display: none;
-  }
-}
 .section3 .sec3__contents span:hover {
   opacity: 1;
   transition: all 0.3s;
@@ -1075,7 +1067,6 @@
   margin-left: -10vw;
 }
 .section5 .sec1 h2 {
-  background-color: #1b9142;
   font-size: 8vw;
   line-height: 1.2;
   transform: translate(-50%, -50%);
@@ -1238,7 +1229,7 @@
 }
 .section5 .sec3 .sec3__contents {
   background-color: #f7e8d6;
-  width: 90%;
+  width: 100%;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -1256,40 +1247,40 @@
   margin-bottom: 5%;
 }
 .section5 .sec3 .sec3__contents img:nth-child(2) {
-  width: 50%;
+  width: 30%;
   position: relative;
   margin-bottom: 5%;
   z-index: 2;
 }
 .section5 .sec3 .sec3__contents img:nth-child(3) {
   position: absolute;
-  width: 49%;
-  top: 22%;
+  width: 29%;
+  top: 29%;
 }
 .section5 .sec3 .sec3__contents .sec3__text {
   position: absolute;
 }
 .section5 .sec3 .sec3__contents .sec3__text.text1 {
-  top: 17%;
+  top: 22%;
 }
 .section5 .sec3 .sec3__contents .sec3__text.text2 {
   top: 36%;
-  left: 19%;
+  left: 28%;
 }
 .section5 .sec3 .sec3__contents .sec3__text.text3 {
   top: 70%;
-  left: 10%;
+  left: 18%;
 }
 .section5 .sec3 .sec3__contents .sec3__text.text4 {
   bottom: 5%;
 }
 .section5 .sec3 .sec3__contents .sec3__text.text5 {
   top: 70%;
-  right: 19%;
+  right: 27%;
 }
 .section5 .sec3 .sec3__contents .sec3__text.text6 {
   top: 36%;
-  right: 19%;
+  right: 27%;
 }
 .section5 .sec3 .sec3__contents .sec3__text span:nth-child(1) {
   color: #1b9142;
@@ -1336,7 +1327,27 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 } */
-
+@media(max-width: 1575px){
+  .section3 .sec3__contents span.decoration:nth-child(7),
+  .section3 .sec3__contents span.decoration:nth-child(16) {
+    display: none;
+  }
+}
+@media(max-width: 1048px){
+  .section3 .sec3__contents span {
+    border: 8px solid rgba(251, 167, 135, 1);
+  }
+}
+@media(max-width: 807px){
+  .section3 .sec3__contents span.decoration:nth-child(1),
+  .section3 .sec3__contents span.decoration:nth-child(8),
+  .section3 .sec3__contents span.decoration:nth-child(9){
+    display: none;
+  }
+  .section3 .sec3__contents span.decoration:nth-child(16) {
+    display: block;
+  }
+}
 @media (max-width: 1200px) {
   #header h1 {
     font-size: 16px;

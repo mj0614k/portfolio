@@ -1820,18 +1820,29 @@
     // ABOUT 나타내기
     gsap.fromTo(
       ".section5 .sec1__decoration div:nth-child(1)",
-      { opacity: 0, duration: 3, x: -200, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
-      { opacity: 1, duration: 3, x: 0,}
+      { opacity: 0, duration: 2, x: -300, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
+      { opacity: 1, duration: 2, x: 0, scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },}
     );
     gsap.fromTo(
       ".section5 .sec1__decoration div:nth-child(2)",
-      { opacity: 0, duration: 3, x: 200, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
-      { opacity: 1, duration: 3, x: 0,}
+      { opacity: 0, duration: 2, x: 300, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
+      { opacity: 1, duration: 2, x: 0, scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },}
     );
     gsap.fromTo(
       ".section5 .sec1__decoration div:nth-child(3)",
-      { opacity: 0, duration: 3, x: -200, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
-      { opacity: 1, duration: 3, x: 0,}
+      { opacity: 0, duration: 2, x: -300, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
+      { opacity: 1, duration: 2, x: 0, scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },}
+    );
+    document.querySelectorAll(".section5 .sec1 h2").forEach((text) => {
+      let splitText = text.innerText;
+      let splitWrap = splitText.split("").join("</span><span>");
+      splitWrap = "<span>" + splitWrap + "</span>";
+      text.innerHTML = splitWrap;
+    });
+    gsap.fromTo(
+      ".section5 .sec1 h2 span",
+      { delay: 2, opacity: 0, duration: 2, stagger: 0.05, x: 0, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
+      { delay: 2, opacity: 1, duration: 2, stagger: 0.05, x: 0, scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },}
     );
     // gsap.fromTo(
     //   ".section5 .sec1 h2",
@@ -1850,9 +1861,10 @@
     //   "a"
     // );
 
-    gsap.to(
+    gsap.fromTo(
       ".section5 .sec4 p",
-      { opacity: 1, y: 00, duration: 3, ease:"power3", scrollTrigger: {   toggleActions: "restart none restart none", trigger: ".section5 .sec4",   scrub: true,   start: "top", },}
+      { opacity: 0, y: -100, duration: 3, ease:"power3", scrollTrigger: {   toggleActions: "restart none restart none", trigger: ".section5 .sec4",   scrub: true,   start: "top 80%;", },},
+      { opacity: 1, y: 00, duration: 3, scrollTrigger: {   toggleActions: "restart none restart none", trigger: ".section5 .sec4",   scrub: true,   start: "top 80%;", },}
     );
 
     // 노랑이 가로모드
