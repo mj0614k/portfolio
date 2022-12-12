@@ -54,7 +54,7 @@
   font-family: "OKDdung";
 }
 .section1 .sec1__decoration div:nth-child(odd) {
-  margin-left: -5vw;
+  margin-left: -10vw;
 }
 #canvas {
   position: absolute;
@@ -132,7 +132,6 @@
   justify-content: center;
   cursor: none;
   overflow: hidden;
-  clear: 
   /* display: flex;
   align-items: center;
   justify-content: center; */
@@ -232,6 +231,7 @@
 .section1 .sec2 .finger {
   z-index: 10;
   user-select: none;
+  pointer-events: none;
   width: 10%;
   position: absolute;
   left: 0;
@@ -1114,6 +1114,7 @@
   width: 8%;
   right: 0;
   user-select: none;
+  pointer-events: none;
   bottom: 0%;
   z-index: 5;
 }
