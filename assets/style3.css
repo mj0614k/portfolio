@@ -1324,13 +1324,12 @@ body {
   .section1 .sec1__decoration {
     font-size: 16vw;
   }
-  /* .section1 .sec1__img {
-    transform: translateY(-100%);
+  .section1 .sec1__img {
     width: 42vw;
   }
   .section1 .sec1__img:hover {
     width: 45vw;
-  } */
+  }
   .section3 .sec3__contents span {
     border: 8px solid rgba(251, 167, 135, 1);
   }
