@@ -16,9 +16,9 @@
   box-sizing: border-box;
   padding: 10px 20px;
 }
-#header h1 {
+#header h1 a {
+  color: #f7e8d6;
   font-size: 1.5vw;
-  cursor: pointer;
 }
 #header nav {
   display: flex;
@@ -947,6 +947,12 @@
   font-size: 5vw;
 }
 .section4 .sec3__contents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section4 .sec3__contents form {
   width: 90%;
 }
 .section4 .sec3__contents .input {
@@ -964,7 +970,7 @@
   border-radius: 10px;
   box-sizing: border-box;
   border: none;
-  font-size: 2vw;
+  font-size: 1.5vw;
   padding: 10px 15px;
   color: #222;
   width: 100%;
@@ -978,7 +984,7 @@
   color: #222;
   box-sizing: border-box;
   border: none;
-  font-size: 2vw;
+  font-size: 1.5vw;
   width: 100%;
 }
 .section4 .sec3__contents .input__button {
@@ -1001,7 +1007,7 @@
 }
 
 .section4 .sec3__contents .comments {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2%;
@@ -1010,7 +1016,6 @@
   width: 24%;
   box-sizing: border-box;
   padding: 2%;
-  height: 24%;
   background-image: url(img/portfolio__06.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1376,7 +1381,7 @@
   }
 }
 @media (max-width: 1200px) {
-  #header h1 {
+  #header h1 a{
     font-size: 16px;
   }
   #header nav {
