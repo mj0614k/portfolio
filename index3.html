@@ -1824,18 +1824,18 @@
     // ABOUT 나타내기
     gsap.fromTo(
       ".section5 .sec1__decoration div:nth-child(1)",
-      { opacity: 0, duration: 2, x: -300, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
-      { opacity: 1, duration: 2, x: 0, scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },}
+      { delay: 1, opacity: 0, duration: 2, x: -300, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
+      { delay: 1, opacity: 1, duration: 2, x: 0, scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },}
     );
     gsap.fromTo(
       ".section5 .sec1__decoration div:nth-child(2)",
-      { opacity: 0, duration: 2, x: 300, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
-      { opacity: 1, duration: 2, x: 0, scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },}
+      { delay: 1, opacity: 0, duration: 2, x: 300, ease: "power3", scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
+      { delay: 1, opacity: 1, duration: 2, x: 0, scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },}
     );
     gsap.fromTo(
       ".section5 .sec1__decoration div:nth-child(3)",
-      { opacity: 0, duration: 2, x: -300, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
-      { opacity: 1, duration: 2, x: 0, scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },}
+      { delay: 1, opacity: 0, duration: 2, x: -300, ease: "power3", scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
+      { delay: 1, opacity: 1, duration: 2, x: 0, scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },}
     );
     document.querySelectorAll(".section5 .sec1 h2").forEach((text) => {
       let splitText = text.innerText;
@@ -1844,31 +1844,14 @@
       text.innerHTML = splitWrap;
     });
     gsap.fromTo(
-      ".section5 .sec1 h2 span",
-      { delay: 2, opacity: 0, duration: 2, stagger: 0.05, x: 0, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
-      { delay: 2, opacity: 1, duration: 2, stagger: 0.05, x: 0, scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },}
+      ".section5 .sec2 h2 span",
+      { delay: 3, opacity: 0, duration: 2, stagger: 0.05, x: 0, ease: "power3", scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },},
+      { delay: 3, opacity: 1, duration: 2, stagger: 0.05, x: 0, scrollTrigger: { markers: true, toggleActions: "restart none restart none", trigger: ".section5 .sec1",   start: "top 80%;" },}
     );
-    // gsap.fromTo(
-    //   ".section5 .sec1 h2",
-    //   { delay: 0.3, opacity: 0, y: -30, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section5 .sec1",   start: "top 30%;" },},
-    //   { delay: 0.3, opacity: 1, y: 0, ease: "power3", stagger: 0.02, scrollTrigger: {   toggleActions: "restart none reverse none", trigger: ".section5 .sec1",   start: "top 30%;" },}
-    // );
-    // tl1.fromTo(
-    //   ".section1 .sec1__decoration div:nth-child(odd)",
-    //   { opacity: 0, x: 0 },
-    //   {
-    //     x: -200,
-    //     opacity: 1,
-    //     trigger: ".section1 .sec1__decoration div:nth-child(odd)",
-    //     duration: 1,
-    //   },
-    //   "a"
-    // );
 
-    gsap.fromTo(
-      ".section5 .sec4 p",
-      { opacity: 0, y: -100, duration: 3, ease:"power3", scrollTrigger: {   toggleActions: "restart none restart none", trigger: ".section5 .sec4",   scrub: true,   start: "top 80%;", },},
-      { opacity: 1, y: 00, duration: 3, scrollTrigger: {   toggleActions: "restart none restart none", trigger: ".section5 .sec4",   scrub: true,   start: "top 80%;", },}
+    gsap.to(
+      ".section5 .sec2 .coin .bg",
+      { opacity: 1, y: 00, duration: 3, scrollTrigger: {   toggleActions: "restart none restart none", trigger: ".section5 .sec2",   scrub: true,   start: "top 80%;", },}
     );
 
     // 노랑이 가로모드

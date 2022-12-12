@@ -251,6 +251,7 @@
 }
 .section2 .sec1 .box {
   position: relative;
+  width: 70%;
 }
 .section2 .sec1 #monsters {
   width: 30% !important;
@@ -447,6 +448,7 @@
   height: 100vh;
 }
 .section3 .sec1 .box {
+  width: 70%;
   position: relative;
 }
 .section3 .sec1 #monsters {
@@ -744,6 +746,7 @@
   align-items: center;
 }
 .section4 .sec1 .box {
+  width: 70%;
   position: relative;
 }
 .section4 .sec1 #monsters {
@@ -1107,6 +1110,7 @@
   position: absolute;
   width: 140%;
   top: -20%;
+  opacity: 0;
   z-index: 1;
   left: -20%;
 }
