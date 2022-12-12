@@ -41,6 +41,8 @@ body {
   height: 100vh;
   overflow: hidden;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .section1 .sec1__decoration {
   position: fixed;
@@ -68,9 +70,6 @@ body {
 .section1 .sec1__img {
   width: 30vw;
   height: 30vw;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   position: fixed;
   z-index: 10;
   transition: all 0.3s;
@@ -1325,13 +1324,13 @@ body {
   .section1 .sec1__decoration {
     font-size: 16vw;
   }
-  .section1 .sec1__img {
-    transform: translateY(-20%);
+  /* .section1 .sec1__img {
+    transform: translateY(-100%);
     width: 42vw;
   }
   .section1 .sec1__img:hover {
     width: 45vw;
-  }
+  } */
   .section3 .sec3__contents span {
     border: 8px solid rgba(251, 167, 135, 1);
   }
