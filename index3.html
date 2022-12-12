@@ -1387,9 +1387,9 @@
     // });
     tl1.fromTo(
       ".section1 .sec1__decoration div:nth-child(odd)",
-      { opacity: 0, x: 0 },
+      { opacity: 0, x: 100 },
       {
-        x: -200,
+        x: -100,
         opacity: 1,
         duration: 1,
       },
@@ -1397,9 +1397,9 @@
     );
     tl1.fromTo(
       ".section1 .sec1__decoration div:nth-child(even)",
-      { opacity: 0, x: -300 },
+      { opacity: 0, x: -100 },
       {
-        x: -100,
+        x: 100,
         opacity: 1,
         duration: 1,
       },
@@ -1599,7 +1599,7 @@
         stagger: 0.5,
         ease: "bounce",
         scrollTrigger: {
-          markers: true,
+          // markers: true,
           trigger: ".section1 .sec2 h2",
           scrub: 3,
           start: "top center",
