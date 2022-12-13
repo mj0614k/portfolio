@@ -10,7 +10,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 15;
   display: flex;
   justify-content: space-between;
   color: #f7e8d6;
@@ -193,7 +193,7 @@ body {
   color: #f7e8d6;
   font-family: "OKDdung";
   text-align: center;
-  z-index: 2;
+  z-index: -2;
   display: block;
   position: sticky;
   left: 0;
@@ -225,8 +225,6 @@ body {
 }
 .section2 .sec1__mon svg {
   width: 5vw;
-  position: absolute;
-  left: 0; top: 0;
   z-index: 10;
 }
 .section2 .sec1 {
@@ -381,21 +379,11 @@ body {
 
 /* section3 */
 .section3 {
-  overflow: hidden;
   background-color: #ff6235;
   position: relative;
 }
 .section3 .sec1 {
-  z-index: 10;
-  background-color: #ff6235;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   position: relative;
-  align-items: center;
-  width: 100%;
-  overflow: hidden;
-  height: 100vh;
 }
 .section3 .sec1__title {
   color: #f7e8d6;
@@ -416,34 +404,31 @@ body {
   font-size: 2vw;
   text-align: center;
   font-family: "BMJua";
-}
-.section3 .sec1__desc span {
-  opacity: 0;
-}
-.section3 .sec1__desc span {
-  min-width: 0.5vw;
+  margin-bottom: 5%;
 }
 .section3 .sec1__mon {
-  position: fixed;
+  position: absolute;
   left: 0;
-  top: 0;
+
+  z-index: 100;
 }
 .section3 .sec1__mon svg {
   width: 20vw;
   position: absolute;
   left: 0; top: 0;
-  z-index: 10;
+  z-index: 100;
 }
-.section3 .sec2 {
-  /* .section3 .sec3,
-.section3 .sec4,
-.section3 .sec5,
-.section3 .sec6 { */
-  background-color: #ff6235;
-  z-index: 10;
+.section3 .sec1 .pc {
   width: 500%;
+  padding-top: 5%;
   display: flex;
   position: relative;
+  z-index: 10;
+  overflow-x: hidden;
+}
+.section3 .sec1 .pc__view {
+  width: 100%;
+  overflow-x: hidden;
 }
 .section3 .site {
   position: relative;
@@ -452,6 +437,7 @@ body {
   border: 3px solid #ff6235;
   box-sizing: border-box;
   width: 100%;
+  z-index: 50;
   padding: 0.5% 1%;
   display: flex;
   flex-direction: column;
