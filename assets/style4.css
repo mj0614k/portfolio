@@ -407,9 +407,9 @@ body {
   margin-bottom: 5%;
 }
 .section3 .sec1__mon {
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 0;
-
   z-index: 100;
 }
 .section3 .sec1__mon svg {

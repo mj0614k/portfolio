@@ -20,7 +20,7 @@
     <main id="contents">
       <section id="section1" class="section1">
         <div class="sec1">
-          <!-- <svg id="canvas"></svg> -->
+          <svg id="canvas"></svg>
           <div class="sec1__decoration" aria-hidden="true">
             <div>PORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO</div>
             <div>PORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO</div>
@@ -2061,14 +2061,85 @@
     {
         opacity: 1,
         duration: 0.4,
-        left: "90vw",
+        left: "20vw",
         scrollTrigger: {
             trigger: ".section3 .pc",
             start: "top -20%",
-            end: "bottom 5%",
+            end: "+=100%",
             scrub: 1,
         }
     })
+    gsap.fromTo(".section3 .sec1__mon", 
+    {
+      opacity: 1,
+        duration: 0.4,
+        left: "20vw",
+        scrollTrigger: {
+            trigger: ".section3 .pc",
+            start: "top -20%",
+            end: "+=100%",
+            scrub: 1,
+        }
+    },
+    {
+      opacity: 1,
+        duration: 0.4,
+        left: "40vw",
+        scrollTrigger: {
+          markers: true,
+            trigger: ".section3 .pc",
+            start: "+=200%",
+            end: "+=300%",
+            scrub: 1,
+        }
+    })
+    gsap.fromTo(".section3 .sec1__mon", 
+    {
+      opacity: 1,
+        duration: 0.4,
+        left: "40vw",
+        scrollTrigger: {
+            trigger: ".section3 .pc",
+            start: "+=200%",
+            end: "+=300%",
+            scrub: 1,
+        }
+    },
+    {
+      opacity: 1,
+        duration: 0.4,
+        left: "60vw",
+        scrollTrigger: {
+            trigger: ".section3 .pc",
+            start: "+=300%",
+            end: "+=400%",
+            scrub: 1,
+        }
+    })
+    gsap.fromTo(".section3 .sec1__mon", 
+    {
+      opacity: 1,
+        duration: 0.4,
+        left: "60vw",
+        scrollTrigger: {
+            trigger: ".section3 .pc",
+            start: "+=300%",
+            end: "+=400%",
+            scrub: 1,
+        }
+    },
+    {
+      opacity: 1,
+        duration: 0.4,
+        left: "80vw",
+        scrollTrigger: {
+            trigger: ".section3 .pc",
+            start: "+=400%",
+            end: "+=500%",
+            scrub: 1,
+        }
+    })
+    
     
     // 분홍이 가로모드
     const sections = gsap.utils.toArray(".section3 .pc__view .site");
