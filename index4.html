@@ -2056,13 +2056,12 @@
     gsap.fromTo(".section3 .sec1__mon", 
     {
         left: "-15vw",
-        opacity: 1,
     },
     {
-        opacity: 1,
         duration: 0.4,
         left: "20vw",
         scrollTrigger: {
+          markers: true,
             trigger: ".section3 .pc",
             start: "top -20%",
             end: "+=100%",
@@ -2071,44 +2070,43 @@
     })
     gsap.fromTo(".section3 .sec1__mon", 
     {
-      opacity: 1,
         duration: 0.4,
         left: "20vw",
-        scrollTrigger: {
-            trigger: ".section3 .pc",
-            start: "top -20%",
-            end: "+=100%",
-            scrub: 1,
-        }
     },
     {
-      opacity: 1,
         duration: 0.4,
         left: "40vw",
         scrollTrigger: {
           markers: true,
             trigger: ".section3 .pc",
-            start: "+=200%",
-            end: "+=300%",
+            start: "+=100%",
+            end: "+=200%",
             scrub: 1,
         }
     })
     gsap.fromTo(".section3 .sec1__mon", 
     {
-      opacity: 1,
         duration: 0.4,
         left: "40vw",
+    },
+    {
+        duration: 0.4,
+        left: "60vw",
         scrollTrigger: {
             trigger: ".section3 .pc",
             start: "+=200%",
             end: "+=300%",
             scrub: 1,
         }
-    },
+    })
+    gsap.fromTo(".section3 .sec1__mon", 
     {
-      opacity: 1,
         duration: 0.4,
         left: "60vw",
+    },
+    {
+        duration: 0.4,
+        left: "80vw",
         scrollTrigger: {
             trigger: ".section3 .pc",
             start: "+=300%",
@@ -2118,20 +2116,12 @@
     })
     gsap.fromTo(".section3 .sec1__mon", 
     {
-      opacity: 1,
-        duration: 0.4,
-        left: "60vw",
-        scrollTrigger: {
-            trigger: ".section3 .pc",
-            start: "+=300%",
-            end: "+=400%",
-            scrub: 1,
-        }
-    },
-    {
-      opacity: 1,
         duration: 0.4,
         left: "80vw",
+    },
+    {
+        duration: 0.4,
+        left: "100vw",
         scrollTrigger: {
             trigger: ".section3 .pc",
             start: "+=400%",
@@ -2152,7 +2142,7 @@
         pin: true,
         scrub: 1,
         markers: true,
-        start: "top 0%",
+        start: "top 30%",
         end: "+=500%",
       },
     });

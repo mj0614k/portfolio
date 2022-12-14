@@ -409,13 +409,13 @@ body {
 .section3 .sec1__mon {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -15vw;
   z-index: 100;
 }
 .section3 .sec1__mon svg {
   width: 20vw;
   position: absolute;
-  left: 0; top: 0;
+  left: -10vw; top: 0;
   z-index: 100;
 }
 .section3 .sec1 .pc {
