@@ -413,9 +413,9 @@ body {
   z-index: 100;
 }
 .section3 .sec1__mon svg {
-  width: 20vw;
+  width: 15vw;
   position: absolute;
-  left: -10vw; top: 0;
+  left: -15vw; top: 0;
   z-index: 100;
 }
 .section3 .sec1 .pc {
