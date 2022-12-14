@@ -1022,23 +1022,23 @@
             </form>
             <div class="comments">
               <div>
-                <span class="comments__name">바보자식바보자식바보</span>
-                <p class="comments__comment">한글자두한글자두글자세글자네글자한글자두글자세글자네글자한글자두글자세글자네글자한글자두한글자두글자세글자네글자한글자두글자세글자</p>
+                <span class="comments__name">코멘트</span>
+                <p class="comments__comment">코멘트 준비중입니다!</p>
                 <span class="comments__date">2022-12-02</span>
               </div>
               <div>
-                <span class="comments__name">바보</span>
-                <p class="comments__comment">바보</p>
+                <span class="comments__name">코멘트</span>
+                <p class="comments__comment">코멘트 준비중입니다!</p>
                 <span class="comments__date">2022-12-02</span>
               </div>
               <div>
-                <span class="comments__name">바보</span>
-                <p class="comments__comment">바보</p>
+                <span class="comments__name">코멘트</span>
+                <p class="comments__comment">코멘트 준비중입니다!</p>
                 <span class="comments__date">2022-12-02</span>
               </div>
               <div>
-                <span class="comments__name">바보</span>
-                <p class="comments__comment">바보</p>
+                <span class="comments__name">코멘트</span>
+                <p class="comments__comment">코멘트 준비중입니다!</p>
                 <span class="comments__date">2022-12-02</span>
               </div>
             </div>
@@ -1074,11 +1074,11 @@
           </div>
           <div class="coin">
             <img class="bg" src="assets/img/portfolio__10.png" alt="배경 이미지" />
-            <span class="arrow1__text right">뭘쓸까</span>
+            <span class="arrow1__text right">밝음</span>
             <img class="arrow1 right" src="assets/img/portfolio__arrow__04.png" alt="화살표" />
-            <span class="arrow2__text">좀부끄</span>
+            <span class="arrow2__text">차분함</span>
             <img class="arrow2" src="assets/img/portfolio__arrow__04.png" alt="화살표" />
-            <span class="arrow3__text">러운데</span>
+            <span class="arrow3__text">긍정적</span>
             <img class="arrow3" src="assets/img/portfolio__arrow__04.png" alt="화살표" />
             <img class="bg" src="assets/img/portfolio__10.png" alt="배경 이미지" />
             <div class="front"></div>
@@ -2115,18 +2115,18 @@
     // ABOUT 나타내기
     gsap.fromTo(
       ".section5 .sec1__decoration div:nth-child(1)",
-      { delay: 1, opacity: 0, duration: 2, x: -300, ease: "power3", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", },},
-      { delay: 1, opacity: 1, duration: 2, x: 00, scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",},}
+      { delay: 1, opacity: 0, duration: 2, x: "22.5%", ease: "power3", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", },},
+      { delay: 1, opacity: 1, duration: 2, x: "0%", scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",},}
     );
     gsap.fromTo(
       ".section5 .sec1__decoration div:nth-child(2)",
-      { delay: 1, opacity: 0, duration: 2, x: 200, ease: "power3", scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",},},
-      { delay: 1, opacity: 1, duration: 2, x: -100, scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",},}
+      { delay: 1, opacity: 0, duration: 2, x: "-10%", ease: "power3", scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",},},
+      { delay: 1, opacity: 1, duration: 2, x: "12.5%", scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",},}
     );
     gsap.fromTo(
       ".section5 .sec1__decoration div:nth-child(3)",
-      { delay: 1, opacity: 0, duration: 2, x: -300, ease: "power3", scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",},},
-      { delay: 1, opacity: 1, duration: 2, x: 000, scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",},}
+      { delay: 1, opacity: 0, duration: 2, x: "22.5%", ease: "power3", scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",},},
+      { delay: 1, opacity: 1, duration: 2, x: "0%", scrollTrigger: { toggleActions: "restart none restart none", trigger: ".section5 .sec1",},}
     );
 
     document.querySelectorAll(".section5 .sec1__decoration div").forEach((text) => {
@@ -2136,29 +2136,13 @@
       text.innerHTML = splitWrap;
     });
 
-    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(15)", { delay: 3, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(16)", { delay: 3.2, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(17)", { delay: 3.4, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(18)", { delay: 3.6, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(19)", { delay: 3.8, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(20)", { delay: 4, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(21)", { delay: 4.2, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(8)", { delay: 3, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(9)", { delay: 3.2, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(10)", { delay: 3.4, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(11)", { delay: 3.6, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(12)", { delay: 3.8, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(13)", { delay: 4, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(14)", { delay: 4.2, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(22)", { delay: 3, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(23)", { delay: 3.2, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(24)", { delay: 3.4, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(25)", { delay: 3.6, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(26)", { delay: 3.8, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(27)", { delay: 4, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
-    gsap.to(".section5 .sec1__decoration div:nth-child(odd) span:nth-child(28)", { delay: 4.2, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
+    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(8)", { delay: 3, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
+    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(9)", { delay: 3.2, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
+    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(10)", { delay: 3.4, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
+    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(11)", { delay: 3.6, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
+    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(12)", { delay: 3.8, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
+    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(13)", { delay: 4, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
+    gsap.to(".section5 .sec1__decoration div:nth-child(even) span:nth-child(14)", { delay: 4.2, x: 0, opacity: 1, duration: 0.25, color: "#F7E8D6", scrollTrigger: {toggleActions: "restart none restart none", trigger: ".section5 .sec1", } });
     
     // document.querySelectorAll(".section5 .sec1 h2").forEach((text) => {
     //   let splitText = text.innerText;

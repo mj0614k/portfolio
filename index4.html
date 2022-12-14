@@ -1013,10 +1013,10 @@
           </div>
         </div>
         <div class="sec2">
-          <div class="site site3">
+          <div class="site site1">
             <div class="site__title">
-              <h2>테트리스 게임</h2>
-              <span class="ball">03</span>
+              <h2>CSS 속성 검색 게임</h2>
+              <span class="ball">01</span>
             </div>
             <div class="site__contents">
               <div class="site__left">
@@ -1024,14 +1024,14 @@
                 <img class="arrow" src="assets/img/portfolio__arrow__03.png" alt="화살표" />
               </div>
               <div class="site__img">
-                <img src="assets/img/portfolio__03__03.png" alt="테트리스 게임" />
+                <img src="assets/img/portfolio__03__01.png" alt="CSS 속성 검색 게임" />
               </div>
               <div class="site__right">
                 <img class="arrow" src="assets/img/portfolio__arrow__03.png" alt="화살표" />
-                <a href="https://github.com/mj0614k/codingclass/blob/main/javascript/assets/js/tetris.js" target="_blank" class="view">VIEW CODE</a>
+                <a href="https://github.com/mj0614k/codingclass/blob/main/javascript/assets/js/searchGame.js" target="_blank" class="view">VIEW CODE</a>
                 <p class="desc">
-                  자바스크립트로 구현한 테트리스 게임입니다. 방향키로 블록을 이동시킬 수 있으며, 위쪽 방향키로 블록을 회전시킬 수 있습니다. space bar를 누르면 블록이 빠르게 낙하합니다. Line을 5줄,
-                  10줄, 15줄 제거할 때마다 블록이 낙하하는 속도가 빨라집니다. 아직 미숙한 점은 많지만, 게임 플레이를 원하신다면, 사이트 내에서 연두색 폴더를 클릭해 주세요!
+                  자바스크립트 서치 이펙트를 응용하여 게임을 제작하였습니다. 메모리 게임과 유사한 규칙으로, 제한 시간 2분 동안 최대한 많은 개수의 CSS 속성들을 타이핑하는 게임입니다. START 버튼을
+                  클릭하면 버튼이 사라지고, 속성을 타이핑할 수 있는 입력창이 나타납니다.게임 플레이를 원하신다면, 사이트 내에서 노란색 폴더를 클릭해 주세요!
                 </p>
               </div>
             </div>
@@ -1059,10 +1059,10 @@
               </div>
             </div>
           </div>
-          <div class="site site1">
+          <div class="site site3">
             <div class="site__title">
-              <h2>CSS 속성 검색 게임</h2>
-              <span class="ball">01</span>
+              <h2>테트리스 게임</h2>
+              <span class="ball">03</span>
             </div>
             <div class="site__contents">
               <div class="site__left">
@@ -1070,14 +1070,14 @@
                 <img class="arrow" src="assets/img/portfolio__arrow__03.png" alt="화살표" />
               </div>
               <div class="site__img">
-                <img src="assets/img/portfolio__03__01.png" alt="CSS 속성 검색 게임" />
+                <img src="assets/img/portfolio__03__03.png" alt="테트리스 게임" />
               </div>
               <div class="site__right">
                 <img class="arrow" src="assets/img/portfolio__arrow__03.png" alt="화살표" />
-                <a href="https://github.com/mj0614k/codingclass/blob/main/javascript/assets/js/searchGame.js" target="_blank" class="view">VIEW CODE</a>
+                <a href="https://github.com/mj0614k/codingclass/blob/main/javascript/assets/js/tetris.js" target="_blank" class="view">VIEW CODE</a>
                 <p class="desc">
-                  자바스크립트 서치 이펙트를 응용하여 게임을 제작하였습니다. 메모리 게임과 유사한 규칙으로, 제한 시간 2분 동안 최대한 많은 개수의 CSS 속성들을 타이핑하는 게임입니다. START 버튼을
-                  클릭하면 버튼이 사라지고, 속성을 타이핑할 수 있는 입력창이 나타납니다.게임 플레이를 원하신다면, 사이트 내에서 노란색 폴더를 클릭해 주세요!
+                  자바스크립트로 구현한 테트리스 게임입니다. 방향키로 블록을 이동시킬 수 있으며, 위쪽 방향키로 블록을 회전시킬 수 있습니다. space bar를 누르면 블록이 빠르게 낙하합니다. Line을 5줄,
+                  10줄, 15줄 제거할 때마다 블록이 낙하하는 속도가 빨라집니다. 아직 미숙한 점은 많지만, 게임 플레이를 원하신다면, 사이트 내에서 연두색 폴더를 클릭해 주세요!
                 </p>
               </div>
             </div>
@@ -2257,18 +2257,48 @@
 
     // 노랑이 가로모드
     const sections2 = gsap.utils.toArray(".section4 .sec2 .site");
+    const tl2 = gsap.timeline();
 
-    gsap.to(sections2, {
-      xPercent: 100 * (sections2.length),
+    tl2.to(sections2, {
       ease: "none",
       scrollTrigger: {
         trigger: ".section4 .sec2",
         pin: true,
         scrub: 1,
         start: "top 0%",
-        end: "+=300%",
-      },
-    });
+        end: "+=100%",
+      }
+    })
+    tl2.fromTo(".section4 .sec2 .site2", 1, {x:"-100%"}, {x:"0%", scrollTrigger: {trigger: ".section4 .sec2", pin: true, start: "+=100%",
+        end: "+=200%",} }, )
+    // tl2.fromTo(".section4 .sec2 .site3", 1, {x:"-100%"}, {x:"0%"} )
+
+    // gsap.to(sections2, {
+    //   xPercent: 100 * (sections2.length),
+    //   ease: "none",
+    //   scrollTrigger: {
+    //     trigger: ".section4 .sec2",
+    //     pin: true,
+    //     scrub: 1,
+    //     start: "top 0%",
+    //     end: "+=300%",
+    //   },
+    // });
+    // let controller = new ScrollMagic.Controller();
+    // let wipeAnimation = new TimelineMax()
+    // .fromTo(".section4 .sec2 .site2", 1, {x:"-100%"}, {x:"0%"} )
+    // .fromTo(".section4 .sec2 .site3", 1, {y:"-100%"}, {y:"0%"} )
+    
+    
+    // let scene = new ScrollMagic.Scene({
+    //       triggerElement: ".section4 .sec2",
+    //       triggerHook: "onLeave",
+    //       duration: "500%" //이 값이 클 수록 천천히 덮어씀
+    // })
+    // .setPin(".section4 .sec2")
+    // .setTween(wipeAnimation)
+    // .addIndicators() 
+    // .addTo(controller);
 
     document.querySelectorAll(".section4 .sec3__title h2").forEach((text) => {
       let splitText = text.innerText;
